@@ -1,0 +1,278 @@
+create new widget with name " Headerz - 970_90 custom only for homepage"
+
+and add the following code in it
+<!-- <style>
+.controlz {
+  display: none;
+}
+
+.carousel-inner:hover + .controlz {
+  display: block;
+}
+
+</style> -->
+
+<!--
+
+IMPORTANT: This widget contains real Adsense code as a sample to show how this widget functions.  Please replace the current Adsense code below with your own code in order to generate revenue from this ad space.
+
+-->
+<div class="container clearfix text-center above-content-banner-ad">
+	<?php 
+$myquery = mysql(brilliantDirectories::getDatabaseConfiguration('database'), "SELECT *  FROM `sliding_banners_ads` WHERE banner_type='below_header_banner_ad' ");
+
+$myresultheader = mysql_fetch_array($myquery);
+	if (empty($wa)) {
+		$wa = getWebsiteLayout($w['website_id']);
+	}
+	if(($w['show_ads'] == "1"  && $page['filename'] != "join" && $wa['custom_250'] == "" && $pars[0] != "join") || ($wa['custom_250'] == "1"  && $page['filename'] != "join" && $pars[0] != "join")) {
+
+		if (($page['seo_type'] == "profile" && $subscription['display_ads'] != "0") || ($page['seo_type'] != "profile")){
+
+			if ($wa['custom_302'] == 1 && $wa['custom_303'] != ""  && empty($myresultheader)) {
+				/* Using Image Banner Ad */ ?>
+				<div class="clearfix vmargin">
+					<a class="center-block text-center" href="<?php echo $wa['custom_304']?>" target="_blank">
+						<img src="<?php echo $wa['custom_303']?>">
+					</a>
+				</div>
+			<?php 
+			} 
+			
+			
+			
+			else if(!empty($myresultheader))
+		{ ?>
+			
+<!--Zain Pasted this code-->
+
+<br>
+<div class="container">
+  
+  <div id="myCarousel6" class="carousel slide" data-ride="carousel">
+    <!-- Indicators 
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol> -->
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+		
+		
+
+      <div class="item active">
+       <a class="center-block text-center" href="<?php echo $myresultheader['url_image_1']?>" target="_blank">
+				<img src="<?php echo $myresultheader['image_1']?>" style="width:100%;">
+			</a>  
+      </div>
+		
+		
+		
+		
+		<?php if(!empty($myresultheader['image_2']))
+		{ ?>
+      <div class="item">
+        <a class="center-block text-center" href="<?php echo $myresultheader['url_image_2']?>" target="_blank">
+				<img src="<?php echo $myresultheader['image_2']?>" style="width:100%;">
+			</a>
+      </div>
+		 <?php  }?>
+		
+		
+		
+    <?php if(!empty($myresultheader['image_3']))
+		{ ?>
+      <div class="item">
+        <a class="center-block text-center" href="<?php echo $myresultheader['url_image_3']?>" target="_blank">
+				<img src="<?php echo $myresultheader['image_3']?>" style="width:100%;">
+			</a>    
+      </div>
+		 <?php  }?>
+		
+		
+		
+		<?php if(!empty($myresultheader['image_4']))
+		{ ?>
+		<div class="item">
+        <a class="center-block text-center" href="<?php echo $myresultheader['url_image_4']?>" target="_blank">
+				<img src="<?php echo $myresultheader['image_4']?>" style="width:100%;">
+			</a>
+      </div>
+		 <?php  }?>
+		
+		
+		
+		<?php if(!empty($myresultheader['image_5']))
+		{ ?>
+		<div class="item">
+        <a class="center-block text-center" href="<?php echo $myresultheader['url_image_5']?>" target="_blank">
+				<img src="<?php echo $myresultheader['image_5']?>" style="width:100%;">
+			</a>        
+      </div>
+   <?php  }?>
+		
+		
+		<?php if(!empty($myresultheader['image_6']))
+		{ ?>
+		<div class="item">
+        <a class="center-block text-center" href="<?php echo $myresultheader['url_image_6']?>" target="_blank">
+				<img src="<?php echo $myresultheader['image_6']?>" style="width:100%;">
+			</a>        
+      </div>
+   <?php  }?>
+		
+		
+		<?php if(!empty($myresultheader['image_7']))
+		{ ?>
+		<div class="item">
+        <a class="center-block text-center" href="<?php echo $myresultheader['url_image_7']?>" target="_blank">
+				<img src="<?php echo $myresultheader['image_7']?>" style="width:100%;">
+			</a>        
+      </div>
+   <?php  }?>
+		
+		
+		<?php if(!empty($myresultheader['image_8']))
+		{ ?>
+		<div class="item">
+        <a class="center-block text-center" href="<?php echo $myresultheader['url_image_8']?>" target="_blank">
+				<img src="<?php echo $myresultheader['image_8']?>" style="width:100%;">
+			</a>        
+      </div>
+   <?php  }?>
+		
+		
+		<?php if(!empty($myresultheader['image_9']))
+		{ ?>
+		<div class="item">
+        <a class="center-block text-center" href="<?php echo $myresultheader['url_image_9']?>" target="_blank">
+				<img src="<?php echo $myresultheader['image_9']?>" style="width:100%;">
+			</a>        
+      </div>
+   <?php  }?>
+		
+		
+		<?php if(!empty($myresultheader['image_10']))
+		{ ?>
+		<div class="item">
+        <a class="center-block text-center" href="<?php echo $myresultheader['url_image_10']?>" target="_blank">
+				<img src="<?php echo $myresultheader['image_10']?>" style="width:100%;">
+			</a>        
+      </div>
+   <?php  }?>
+		
+		
+		<?php if(!empty($myresultheader['image_11']))
+		{ ?>
+		<div class="item">
+        <a class="center-block text-center" href="<?php echo $myresultheader['url_image_11']?>" target="_blank">
+				<img src="<?php echo $myresultheader['image_11']?>" style="width:100%;">
+			</a>        
+      </div>
+   <?php  }?>
+		
+		
+		<?php if(!empty($myresultheader['image_12']))
+		{ ?>
+		<div class="item">
+        <a class="center-block text-center" href="<?php echo $myresultheader['url_image_12']?>" target="_blank">
+				<img src="<?php echo $myresultheader['image_12']?>" style="width:100%;">
+			</a>        
+      </div>
+   <?php  }?>
+		
+		
+		<?php if(!empty($myresultheader['image_13']))
+		{ ?>
+		<div class="item">
+        <a class="center-block text-center" href="<?php echo $myresultheader['url_image_13']?>" target="_blank">
+				<img src="<?php echo $myresultheader['image_13']?>" style="width:100%;">
+			</a>        
+      </div>
+   <?php  }?>
+		
+		
+		<?php if(!empty($myresultheader['image_14']))
+		{ ?>
+		<div class="item">
+        <a class="center-block text-center" href="<?php echo $myresultheader['url_image_14']?>" target="_blank">
+				<img src="<?php echo $myresultheader['image_14']?>" style="width:100%;">
+			</a>        
+      </div>
+   <?php  }?>
+		
+		
+		<?php if(!empty($myresultheader['image_15']))
+		{ ?>
+		<div class="item">
+        <a class="center-block text-center" href="<?php echo $myresultheader['url_image_15']?>" target="_blank">
+				<img src="<?php echo $myresultheader['image_15']?>" style="width:100%;">
+			</a>        
+      </div>
+   <?php  }?>
+		
+		
+		
+		
+    </div>
+
+    <!-- Left and right controls -->
+	  <div class="controlz">
+			<a class="left carousel-control" href="#myCarousel6" data-slide="prev">
+			  <span class="glyphicon glyphicon-chevron-left"></span>
+			  <span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel6" data-slide="next">
+			  <span class="glyphicon glyphicon-chevron-right"></span>
+			  <span class="sr-only">Next</span>
+			</a>
+	  </div>
+    
+  </div>
+</div>
+<br>
+ <!--Zain Pasted this code-->
+	<?php 	} 
+			
+			
+			
+			else if ($wa['custom_302'] == 3 && $wa['custom_304'] != "")  { 
+				/* Using Custom Embed Code */ ?>
+				<div class="clearfix vmargin">
+					<?php echo $wa['custom_304']?>
+				</div>
+			<?php 
+			} else if (($wa['custom_302'] == "") || ($wa['custom_302'] == 1 && $wa['custom_303'] == "") || ($wa['custom_302'] == 3 && $wa['custom_304'] == "")) { ?>
+				<?php if ($w[website_id] < 12000) { ?>
+					<div class="clearfix vmargin">
+						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<!-- Responsive Ad Size -->
+						<ins class="adsbygoogle"
+							 style="display:block"
+							 data-ad-client="ca-pub-9701662000865416"
+							 data-ad-slot="7758919238"
+							 data-ad-format="auto"></ins>
+						<script>
+						(adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+					</div>
+				<?php } else { ?>
+					<div class="clearfix vmargin">
+						<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<!-- Leaderboard 970x90 -->
+						<ins class="adsbygoogle"
+							 style="display:inline-block;width:970px;height:90px"
+							 data-ad-client="ca-pub-8586641804193174"
+							 data-ad-slot="1922305192"></ins>
+						<script>
+							 (adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+					</div>
+				<?php } ?>
+			<?php 
+			}
+		}
+	} ?>
+</div>
